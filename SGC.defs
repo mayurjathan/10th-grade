@@ -1,0 +1,1107 @@
+// this is the computer assignment by shrisha, mayur and bhavish of grade 10
+import java.util.*;
+class sgc
+{
+    static double bal=0;
+    static String n;
+    Scanner sc=new Scanner(System.in);
+    void design()// to show our logo
+    {
+        int a;       
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||||||||   ||||||||||| ");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||||||||||   ||     |||||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("       ||||||||||   ||||||||||||   |||||||||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||||||||   |||||||| ");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||||||||||   ||     |||||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("       ||||||||||   ||||||||||||   |||||||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||||||||   ||||| ");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||||||||||   ||     |||||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("       ||||||||||   ||||||||||||   |||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||||||||   || ");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||           ||             ||");
+            System.out.println("       ||||||||||   ||     |||||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("               ||   ||        ||   ||");
+            System.out.println("       ||||||||||   ||||||||||||   ||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||||||||   ");
+            System.out.println("       ||           ||             ");
+            System.out.println("       ||           ||             ");
+            System.out.println("       ||||||||||   ||     |||||   ");
+            System.out.println("               ||   ||        ||   ");
+            System.out.println("               ||   ||        ||   ");
+            System.out.println("       ||||||||||   ||||||||||||   ");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   |||||||||");
+            System.out.println("       ||           ||       ");
+            System.out.println("       ||           ||       ");
+            System.out.println("       ||||||||||   ||     ||");
+            System.out.println("               ||   ||       ");
+            System.out.println("               ||   ||       ");
+            System.out.println("       ||||||||||   |||||||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ||||||");
+            System.out.println("       ||           ||    ");
+            System.out.println("       ||           ||    ");
+            System.out.println("       ||||||||||   ||    ");
+            System.out.println("               ||   ||    ");
+            System.out.println("               ||   ||    ");
+            System.out.println("       ||||||||||   ||||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   |||");
+            System.out.println("       ||           ||    ");
+            System.out.println("       ||           ||    ");
+            System.out.println("       ||||||||||   ||    ");
+            System.out.println("               ||   ||    ");
+            System.out.println("               ||   ||    ");
+            System.out.println("       ||||||||||   |||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||||||||   ");
+            System.out.println("       ||           ");
+            System.out.println("       ||           ");
+            System.out.println("       ||||||||||   ");
+            System.out.println("               ||   ");
+            System.out.println("               ||   ");
+            System.out.println("       ||||||||||   ");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       |||||||");
+            System.out.println("       ||     ");
+            System.out.println("       ||     ");
+            System.out.println("       |||||||");
+            System.out.println("              ");
+            System.out.println("              ");
+            System.out.println("       |||||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       ||||");
+            System.out.println("       ||  ");
+            System.out.println("       ||  ");
+            System.out.println("       ||||");
+            System.out.println("          ");
+            System.out.println("          ");
+            System.out.println("       ||||");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            System.out.println("       |");
+            System.out.println("       |");
+            System.out.println("       |");
+            System.out.println("       |");
+            System.out.println("        ");
+            System.out.println("        ");
+            System.out.println("       |");
+            System.out.println("\f");
+        }
+        for(a=1;a<=750;a++)
+        {
+            
+            System.out.println("\f");
+        }
+        return;
+    }
+    void odev()
+    {
+        sgc ob=new sgc();
+        bal=bal-100;
+        if(bal<0)
+        ob.err();         // if no enough balance then it is displayed  
+        System.out.println("------------------------------");
+        System.out.println("----WELCOME TO SGC HAND CRICKET----");
+        System.out.println("------------------------------");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("You are batting first ");
+        System.out.println("------------------------------");
+        System.out.println("---------BEST OF LUCK--------");
+        System.out.println("-----------------------------");
+        System.out.println("");
+        System.out.println("");
+        int a=0;// number which is to be input by user
+        int t=0;//total score by user
+        double b;//to take random number
+        int ct=0;//to take computer's score
+        int c;//computer's  number to bowl when user is batting
+        while(a<=t)
+        {  
+           System.out.println("-----------------------------------");
+           System.out.println("");
+           System.out.print("Enter the number you want to bat(1-10):");
+           a=sc.nextInt();//number input by user
+           if(a>10||a<1)// if user enters a number other than 10-1
+           {
+              System.out.println("");
+              System.out.println("Retry");
+              break;
+           }
+           b=Math.random()*10.0;
+           c=(int)b+1;
+           System.out.println("");
+           System.out.println("Computer has played "+c);
+           if(a==c)// if both enter same value
+           {      
+              System.out.print("\f");
+              System.out.println("-------------------------"); 
+              System.out.println("!!!HOWZAT!!! You are out.");
+              System.out.println("-------------------------");
+              System.out.println(""); 
+              break;
+           }
+           t=t+a;//totalling score
+           System.out.println("");
+           System.out.println("Score-"+t);
+           System.out.println("-----------------------------------");
+           System.out.println("");
+           System.out.println("Do you want to declare?");
+           System.out.println("1-yes");
+           System.out.println("other key-no");
+           System.out.print("Your choice :");
+           int w=sc.nextInt();// choice for declaring innings
+           if(w==1)// if yes
+           break;
+        }                
+        while(a<=t)
+        {
+            System.out.println("------------------------------------");
+            System.out.println("");
+            System.out.print("Enter the number you want to bowl:");
+            a=sc.nextInt();
+            b=Math.random()*10;
+            c=(int)b;
+            System.out.println("");
+            System.out.println("Computer has played "+c);
+            System.out.println("");
+            System.out.println("Do you want to declare?");
+            System.out.println("1-         yes");
+            System.out.println("other key- no");
+            System.out.println("");
+            System.out.print("Your choice :");
+            int w=sc.nextInt();// varible to store choice
+            System.out.println("");
+            if(ct>t)// if computer's score is more than user's score
+            {
+                System.out.print("\f");
+                System.out.println("-------------------------------------------------");
+                System.out.println("You have lost to the computer by "+(ct-t)+" runs.");
+                System.out.println("-------------------------------------------------");
+                break;
+            }
+            if(a==c)//if computer is out
+            {
+                System.out.print("\f");
+                System.out.println("--------------------------------------------------------------------");
+                System.out.println("!!!Congrats Bro, The Master Blaster has lost to you by "+(t-ct)+" runs");
+                System.out.println("--------------------------------------------------------------------");
+                break;
+            }
+            if(w==1)// if bowler declares in the middle
+            {
+               System.out.println("---------------------------------------------------------");
+               System.out.println("Sorry player, make sure you play the full match next time");
+               System.out.println("---------------------------------------------------------");
+               break;
+            }
+            ct=ct+c;
+            System.out.println("");
+            System.out.println("Score--"+ct);
+            System.out.println("------------------------------------");
+            System.out.println("");
+        }
+        ob.choi();
+    }
+    void noguess()
+    {
+        sgc ob=new sgc();
+        bal=bal-100;
+        if(bal<0)
+        ob.err();        
+        Scanner sc=new Scanner(System.in);
+        int a[]=new int[100];
+        for(int b=0;b<100;b++)
+        a[b]=(b+1);
+        System.out.println("-------------------------------------------");
+        System.out.println("  WELCOME TO THE SGC NUMBER GUESSING GAME");
+        System.out.println("-------------------------------------------");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Think of a number between 1 and 100");
+        int f=a[0];//first number
+        int l=a[99];//last number
+        int m=(f+l)/2;//middle number
+        int x;//number for taking choice
+        while(f<=l)
+        {
+            System.out.println(""); 
+            System.out.println("1- If number is "+m);
+            System.out.println("2- If number is less than "+m);
+            System.out.println("3- If number is greater than "+m);
+            System.out.println("");
+            System.out.print("Enter your choice :"); 
+            x=sc.nextInt();// entering choice
+            if(x==1)//if number thought by the user is equal to the middle number
+            {
+                System.out.print("\f");
+                System.out.println("-------------------------------");
+                System.out.println("        The number is "+m);
+                System.out.println("-------------------------------");
+                break;
+            }
+            else if(x==2)//if number thought is smaller than middle number
+            l=a[m-2];
+            else if(x==3)//if number thought by user is greater than middle number
+            f=a[m];
+            m=(f+l)/2;//middle term of new limit formed
+            if(f>l)//user doesn't think a number and presses randomly
+            {
+                System.out.print("\f");
+                System.out.println("--------------------------------------------");
+                System.out.println("      Don't try to cheat the GENIUS");
+                System.out.println("--------------------------------------------");
+            }
+        }
+        ob.choi();     
+    }
+    void woguess()
+    {
+        sgc ob=new sgc();
+        bal-=100;
+        if(bal<0)
+        ob.err();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("-----------------------------------------------");
+        System.out.println("        WELCOME TO SGC HANGMAN GAME");
+        System.out.println();
+        System.out.println("    You have 15 attempts to guess a word.");
+        System.out.println();
+        System.out.println("              ALL THE BEST");
+        System.out.println("-----------------------------------------------");
+        System.out.println();
+        String a[]=new String[9];// to store words
+        a[0]="exaggeration";
+        a[2]="abstraction";
+        a[3]="astigmatism";
+        a[4]="encampment";
+        a[1]="malayalam";
+        a[5]="dermatologist";
+        a[6]="geology";      
+        a[7]="ointment";
+        a[8]="fragrance";
+        int b[]=new int[9];// to take their length
+        for(int u=0;u<9;u++)
+        b[u]=a[u].length();
+        String e[]=new String[9];// to take hints
+        e[0]="Explaining small things big.";
+        e[2]="Feature of Java.";
+        e[3]="Disease of eye.";
+        e[4]="Place where soldiers stay.";
+        e[1]="Famous palindrome.";
+        e[5]="Doctor of skin.";
+        e[6]="Study of earth.";
+        e[7]="Substance that cures hurts in skin.";
+        e[8]="Pleasant smell.";   
+        double p=Math.random()*10;//random number
+        int q=(int)p;//random  number
+        char x[]=new char[b[q]];
+        for(int z=0;z<b[q];z++)
+        x[z]=a[q].charAt(z);// converting the array of random index number into an array of characters
+        char y[]=new char[b[q]];
+        for(int z=0;z<b[q];z++)
+        y[z]='';//creating array of characters of same length as x[] but with ''
+        char g;// letter to be guesses      
+        boolean i=false;// for checking condition
+        for(int j=0;j<15;j++)
+        {
+            System.out.println("");
+            System.out.print("Word :");            
+            for(int k=0;k<b[q];k++)// loop to display aelements of array y[]
+            System.out.print(y[k]+" ");
+            System.out.println("");
+            System.out.println("");
+            System.out.println("Hint : "+e[q]);
+            System.out.println("");
+            System.out.println("Attempts left : "+(15-j));
+            System.out.println("Guess a letter :");
+            g=sc.next().charAt(0);//guessed letter
+            for(int k=0;k<b[q];k++)// to check each letter with characters of array x[]
+            {
+                if(g==x[k])
+                y[k]=g;//replaces "_' with value of g
+            }
+            for(int k=0;k<b[q];k++)
+            {
+                if(x[k]==y[k])//checking equlaity
+                i=true;
+                else
+                {
+                    i=false;
+                    break;
+                }
+            }
+            if(i==true)  // if word is guesses
+            {
+                 System.out.print("\f");
+                 System.out.println("---------------------------------------------");
+                 System.out.println("Congratulations, the word is "+a[q] );
+                 System.out.println("-----------------------------------");
+                 break;
+            }
+        }
+        ob.choi();
+    }
+    void quiz()
+    {
+        sgc ob=new sgc();
+        bal=bal-100;
+        if(bal<0)
+        ob.err();       
+        Scanner sc=new Scanner(System.in);
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println("          WELCOME TO SGC QUIZ GAME");
+        System.out.println();
+        System.out.println("If you answer all questions correctly, Rs.500 will be debited to your account.");
+        System.out.println();
+        System.out.println("              ALL THE BEST");
+        System.out.println("-------------------------------------------------------------------------------");
+        System.out.println();
+        String oneq[]=new String[5];
+        oneq[0]="I. When was Poorna Swaraj launched";
+        oneq[1]="II. Who is the writer of Malgudi Days?";
+        oneq[2]="III. When was WWW developed? ";
+        oneq[3]="IV. What is a line that intersects a circle only in one point ?";
+        oneq[4]="V. Who is the founder of Amazon?";
+        String onea[]=new String[5];
+        onea[0]="a. 1930";
+        onea[1]="a. RK Narayan";
+        onea[2]="a. 1999";
+        onea[3]="a. Torrent";
+        onea[4]="a. Bill Gates";
+        String oneb[]=new String[5];
+        oneb[0]="b. 1929";
+        oneb[1]="b. Sathyajit Ray";
+        oneb[2]="b. 2000";
+        oneb[3]="b. Testament";
+        oneb[4]="b. Mukesh Ambani";
+        String onec[]=new String[5];
+        onec[0]="c. 1918";
+        onec[1]="c. Sarojini Naidu";
+        onec[2]="c. 1989";
+        onec[3]="c. Tangent";
+        onec[4]="c. Jeff Bezos";
+        char onean[]=new char[5];
+        onean[0]='b';
+        onean[1]='a';
+        onean[2]='c';
+        onean[3]='c';
+        onean[4]='c';
+        String zeroq[]=new String[5];
+        zeroq[0]="I. Where was Narendra Modi born ?";
+        zeroq[1]="II. What is the climate of India? ";
+        zeroq[2]="III. Who is the poet of Mankuthimmana Kagga ?";
+        zeroq[3]="IV. On what date did Nagasaki bomb take place ?";
+        zeroq[4]="V. Who is the longest serving Chief Minister in India ?";
+        String zeroa[]=new String[5];
+        zeroa[0]="a. Gandhinagar";
+        zeroa[1]="a. Decidious Monsoon";
+        zeroa[2]="a. DVG";
+        zeroa[3]="a. August 7";
+        zeroa[4]="a. Siddaramaiah";
+        String zerob[]=new String[5];
+        zerob[0]="b. Vadnagar";
+        zerob[1]="b. Tropical Frozen ";
+        zerob[2]="b. Kuvempu";
+        zerob[3]="b. August 8";
+        zerob[4]="b. Pawan Kumar Chamling";
+        String zeroc[]=new String[5];
+        zeroc[0]="c. Vadodara";
+        zeroc[1]="c. Tropical Monsoon";
+        zeroc[2]="c. DR Bendre";
+        zeroc[3]="c. August 9";
+        zeroc[4]="c. Jayalalitha";   
+        char zeroan[]=new char[5];
+        zeroan[0]='b';
+        zeroan[1]='c';
+        zeroan[2]='a';
+        zeroan[3]='c';
+        zeroan[4]='b';
+        String twoq[]=new String[5];
+        twoq[0]="I. What is the Muslim calendar called ?";
+        twoq[1]="II. Which element did Marie Curie discover ?";
+        twoq[2]="III. Who wrote 'The Merchant of Venice' ?";
+        twoq[3]="IV. Who is the Father of Genetics ?";
+        twoq[4]="V. Which of the following is an input device ?";
+        String twoa[]=new String[5];
+        twoa[0]="a. Hijrat";
+        twoa[1]="a. Uranium";
+        twoa[2]="a. William Shaekspeare";
+        twoa[3]="a. John F Kennedy";
+        twoa[4]="a. Monitor";
+        String twob[]=new String[5];
+        twob[0]="b. Hijri";
+        twob[1]="b. Mercury";
+        twob[2]="b. Prometheus";
+        twob[3]="b. Gregor Mendel";
+        twob[4]="b. Printer";
+        String twoc[]=new String[5];
+        twoc[0]="c. Hijrauli";
+        twoc[1]="c. Radium";
+        twoc[2]="c. Socrates";
+        twoc[3]="c. HG Khorana";
+        twoc[4]="c. Bar Code Reader";
+        char twoan[]=new char[5];
+        twoan[0]='a';
+        twoan[1]='c';
+        twoan[2]='b';
+        twoan[3]='b';
+        twoan[4]='c';
+        String threeq[]=new String[5];
+        threeq[0]="1. Nobel prize is awarded for which of the following disciplines:";
+        threeq[1]="2. Garampani Sanctuary is locate in which of the following places:";
+        threeq[2]="3. Entomology studies what?";
+        threeq[3]="4. Galileo was an astronomer who";
+        threeq[4]="5. Sun exposure can bring about an improvement in health because of which of the following reasons:";
+        String threea[]=new String[5];
+        threea[0]="a.Literature, peace and economics";
+        threea[1]="a.Junagarh, Gujarat";
+        threea[2]="a.Behavior of human beings";
+        threea[3]="a.developed the telescope";
+        threea[4]="a.the ultraviolet rays convert skin oil into Vitamin D";
+        String threeb[]=new String[5];
+        threeb[0]="b.Medicine or Physiology";
+        threeb[1]="b.Kohima, Nagaland";
+        threeb[2]="b.Insects";
+        threeb[3]="b.discovered four satellites of Jupiter";
+        threeb[4]="b.resistance power increases";
+        String threec[]=new String[5];
+        threec[0]="c.All the above";
+        threec[1]="c.Diphu, Assam";
+        threec[2]="c.The origin and history of technical and scientific terms";
+        threec[3]="c.discovered that the movement of pendulum produces a regular time measurement";
+        threec[4]="c.the pigment cells in the skin get stimulated and produce a healthy tan";
+        char threean[]=new char[5];
+        threean[0]='c';
+        threean[1]='c';
+        threean[2]='b';
+        threean[3]='b';
+        threean[4]='a';
+        String fourq[]=new String[5];
+        fourq[0]="1. The radioactive element radium was invented by which of the following scientists?";
+        fourq[1]="2. J.B. Dunlop is popular for which of the following inventions?";
+        fourq[2]="3. The most popular invention that is used in our day-to-day life called ballpoint pen was invented by which of the following scientists:";
+        fourq[3]="4. Which of the following items was introduced by James Watt?";
+        fourq[4]="5. When was telephone invented?";
+        String foura[]=new String[5];
+        foura[0]="a.Marie Curie";
+        foura[1]="a.Model airplanes";
+        foura[2]="a.Waterman brothers";
+        foura[3]="a.Hot air balloon";
+        foura[4]="a.1870s";
+        String fourb[]=new String[5];
+        fourb[0]="b.Benjamin Franklin";
+        fourb[1]="b.Pneumatic rubber tire";
+        fourb[2]="b.Bicc brothers";
+        fourb[3]="b.Steam boat";
+        fourb[4]="b.1880s";
+        String fourc[]=new String[5];
+        fourc[0]="c.Albert Einstein";
+        fourc[1]="c.Rubber boot";
+        fourc[2]="c.Biro brothers";
+        fourc[3]="c.Rotary Steam Engine";
+        fourc[4]="c.1860s";
+        char fouran[]=new char[5];
+        fouran[0]='a';
+        fouran[1]='b';
+        fouran[2]='b';
+        fouran[3]='c';
+        fouran[4]='a';
+        String fiveq[]=new String[5];
+        fiveq[0]="1.Who is the father of geometry?";
+        fiveq[1]="2.Indian player Jude Felix is popular for which sports?";
+        fiveq[2]="3.The Indian, who holds the pride of beating the computers in mathematical wizard is:";
+        fiveq[3]="4.Who is popularly called as the Iron Man of India?";
+        fiveq[4]="5.Guru Gopi Krishna is popular for which form of Indian dance?";
+        String fivea[]=new String[5];
+        fivea[0]="a.Aristotle";
+        fivea[1]="a.Volleyball";
+        fivea[2]="a.Shakuntala Devi";
+        fivea[3]="a.Subhash Chandra Bose";
+        fivea[4]="a.Bharatanatyam";
+        String fiveb[]=new String[5];
+        fiveb[0]="b.Euclid";
+        fiveb[1]="b.Football";
+        fiveb[2]="b.Raja Ramanna";
+        fiveb[3]="b.Sardar Vallabhbhai Patel";
+        fiveb[4]="b.Kuchipudi";
+        String fivec[]=new String[5];
+        fivec[0]="c.Pythagoras";
+        fivec[1]="c.Hockey";
+        fivec[2]="c.Ramanujam";
+        fivec[3]="c.Jawaharlal Nehru";
+        fivec[4]="c.Kathak";
+        char fivean[]=new char[5];
+        fivean[0]='b';
+        fivean[1]='c';
+        fivean[2]='a';
+        fivean[3]='b';
+        fivean[4]='b';
+        String sixq[]=new String[5];
+        sixq[0]="1.In which field is the B.C. Roy Award given?";
+        sixq[1]="2.In which year was the Pulitzer Award Introduced?";
+        sixq[2]="3.The esteemed Ramon Magsaysay Award was given to Ms. Kiran Bedi for her contribution to which of the following fields:";
+        sixq[3]="4.Who among the following people received the Bharat Ratna Award before becoming the President of India?";
+        sixq[4]="5.In memory of which of the following people is the Manav Seva Award given:";
+        String sixa[]=new String[5];
+        sixa[0]="a.Environment";
+        sixa[1]="a.1918";
+        sixa[2]="a.Government service";
+        sixa[3]="a.Dr. Rajendra Prasad";
+        sixa[4]="a.Dr. Rajendra Prasad";
+        String sixb[]=new String[5];
+        sixb[0]="b.Journalism";
+        sixb[1]="b.1917";
+        sixb[2]="b.Community Service";
+        sixb[3]="b.Dr. Zakir Hussain";
+        sixb[4]="b.Indira Gandhi";
+        String sixc[]=new String[5];
+        sixc[0]="c.Medicine";
+        sixc[1]="c.1822";
+        sixc[2]="c.Literature";
+        sixc[3]="c.V.V. Giri";
+        sixc[4]="c.Rajiv Gandhi";
+        char sixan[]=new char[5];
+        sixan[0]='c';
+        sixan[1]='b';
+        sixan[2]='a';
+        sixan[3]='b';
+        sixan[4]='c';
+        String sevenq[]=new String[5];
+        sevenq[0]="1.Who authored the ‘Forbidden Verses’?";
+        sevenq[1]="2. Vikram Seth wrote, which of the following books?";
+        sevenq[2]="3. Which of the following is NOT written by Munshi Premchand?";
+        sevenq[3]="4. The autobiography of Lady Mountbatten is";
+        sevenq[4]="5. ‘Reminiscences of the Nehru Age' is a book written by?";
+        String sevena[]=new String[5];
+        sevena[0]="a.D.H. Lawrence";
+        sevena[1]="a.A Suitable Boy";
+        sevena[2]="a.Gaban";
+        sevena[3]="a.Edwina Mountbatten – Her relationship with Nehru";
+        sevena[4]="a.C.D. Deshmukh";
+        String sevenb[]=new String[5];
+        sevenb[0]="b.Salman RushDie";
+        sevenb[1]="b.Islamic Bomb";
+        sevenb[2]="b.Guide";
+        sevenb[3]="b.Edwina Mountbatten – A Life of Her Own";
+        sevenb[4]="b.Dr. P.C. Alexander";
+        String sevenc[]=new String[5];
+        sevenc[0]="c.Abu Nuwas";
+        sevenc[1]="c.My God Died Young";
+        sevenc[2]="c.Godan";
+        sevenc[3]="c.Mountbatten";
+        sevenc[4]="c.M.O.Mathai";
+        char sevenan[]=new char[5];
+        sevenan[0]='c';
+        sevenan[1]='a';
+        sevenan[2]='b';
+        sevenan[3]='b';
+        sevenan[4]='c';
+        double e=Math.random()*8;// taking random number
+        int r=(int)e;
+        String q[]=new String[5];// final q
+        String a[]=new String[5];//final a
+        String b[]=new String[5];//final b
+        String c[]=new String[5];//final c
+        char an[]=new char[5];//final answer
+        if(r==0)// giving value to final q, a, b, c, an
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=zeroq[x];
+               a[x]=zeroa[x];
+               b[x]=zerob[x];
+               c[x]=zeroc[x];
+               an[x]=zeroan[x];
+            }
+        }
+        else if(r==1)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=oneq[x];
+               a[x]=onea[x];
+               b[x]=oneb[x];
+               c[x]=onec[x];
+               an[x]=onean[x];
+            }
+        }
+        else if(r==2)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=twoq[x];
+               a[x]=twoa[x];
+               b[x]=twob[x];
+               c[x]=twoc[x];
+               an[x]=twoan[x];
+            }
+        }
+        else if(r==3)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=threeq[x];
+               a[x]=threea[x];
+               b[x]=threeb[x];
+               c[x]=threec[x];
+               an[x]=threean[x];
+            }
+        }
+        else if(r==4)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=fourq[x];
+               a[x]=foura[x];
+               b[x]=fourb[x];
+               c[x]=fourc[x];
+               an[x]=fouran[x];
+            }
+        }
+        else if(r==5)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=fiveq[x];
+               a[x]=fivea[x];
+               b[x]=fiveb[x];
+               c[x]=fivec[x];
+               an[x]=fivean[x];
+            }
+        }
+        else if(r==6)
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=sixq[x];
+               a[x]=sixa[x];
+               b[x]=sixb[x];
+               c[x]=sixc[x];
+               an[x]=sixan[x];
+            }
+        }
+        else 
+        {
+            for(int x=0;x<5;x++)
+            {
+               q[x]=sevenq[x];
+               a[x]=sevena[x];
+               b[x]=sevenb[x];
+               c[x]=sevenc[x];
+               an[x]=sevenan[x];
+            }
+        }
+        int s=0;// to take score
+        char l;//answer to be guesses by ser
+        for(int x=0;x<5;x++)
+        {
+            System.out.print("\f");
+            System.out.println(q[x]);
+            System.out.println(""); 
+            System.out.println(a[x]);
+            System.out.println(""); 
+            System.out.println(b[x]);
+            System.out.println(""); 
+            System.out.println(c[x]);
+            System.out.println();
+            System.out.print("Enter your choice : ");
+            l=sc.next().charAt(0);
+            if(l==an[x])// if choice is correct
+            s++;
+        }
+        System.out.print("\f");
+        System.out.println("--------------------------------------------------");
+        System.out.println("             Your score :"+s);
+        if(s==5)// if all are correct
+        {
+            System.out.println("Rs.500 debited to your card.");
+            bal=bal+500;
+            System.out.println("--------------------------------------------------");
+        }
+        else
+        System.out.println("Sorry, better luck next time");
+        System.out.println("--------------------------------------------------");
+        ob.choi();
+    }
+    void sps()
+    {
+        sgc ob=new sgc();
+        bal-=100;
+        if(bal<0)
+        ob.err();
+        Scanner sc=new Scanner(System.in);
+        System.out.println("--------------------------------------------------------");
+        System.out.println("       WELCOME TO SGC STONE, PAPER, SCISSORS GAME");
+        System.out.println("--------------------------------------------------------");
+        System.out.println("");
+        System.out.println("Player first to win three games is the WINNER");
+        System.out.println("");
+        int a;// number input by user
+        double d;
+        int c;
+        int p=0;
+        int q=0;
+        int b;
+        System.out.println("-----------------------------------------------------");
+        System.out.println("                    ALL THE BEST");
+        System.out.println("-----------------------------------------------------");
+        int y=0;
+        int x=0;
+        String m;
+        String n=null;
+        while(bal>=0)
+        {
+            System.out.println("");
+            System.out.println("0. Stone");
+            System.out.println("5. Paper");
+            System.out.println("2. Scissor");
+            System.out.println("");
+            System.out.print("Enter your choice :");
+            a=sc.nextInt();
+            if(a!=0 &&a!=5 &&a!=2)
+            {
+                System.out.print("\f");
+                System.out.println("eRror");
+                System.out.print("");
+                ob.sps();
+            }
+            if(a==2)
+            n="Scissors";
+            else if(a==5)
+            n="Paper";
+            else if(a==0)
+            n="Stone";
+            d=Math.random()*10.0;
+            c=(int)d;       
+            if(y==c)
+            ++c;
+            if(c==0||c==3||c==6||c==9)
+            {
+                m="Stone";
+                b=0;
+            }
+            else if(c==2||c==4||c==8)
+            {
+                m="Scissor";
+                b=2;
+            }
+            else
+            {
+                m="Paper";
+                b=5;
+            }
+            System.out.println("");
+            System.out.println("You have played "+n); 
+            System.out.println("The Compueter has played "+m);
+            System.out.println(""); 
+            if(a==0&&b==5)
+            {
+                q++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"              "+q);                
+            }
+            else if(a==5&&b==0)
+            {
+                p++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==2&&b==0)
+            {
+                q++;
+                System.out.println(n+"           Computer"); 
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==0&&b==2)
+            {
+                p++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==b)
+            {
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==0&&b==2)
+            {
+                p++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==5&&b==2)
+            {
+                q++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            else if(a==2&&b==5)
+            {
+                p++;
+                System.out.println(n+"           Computer");
+                System.out.println(p+"               "+q);    
+            }
+            if(p==3)
+            {
+                System.out.print("\f");
+                System.out.println("---------------------------------------------");
+                System.out.println("Congratulations, you have defeated the Master");
+                System.out.println("---------------------------------------------");
+                break;
+            }
+            else if(q==3)
+            {
+                System.out.print("\f");
+                System.out.println("-------------------------------------------");
+                System.out.println("Sorry NOOB, you are beaten by the master");
+                System.out.println("-------------------------------------------");
+                break;
+            }
+            y=c;
+        }
+        ob.choi();
+    }
+    void err()
+    {
+        System.out.println("-----------------------------------------");
+        System.out.println("      SORRY, YOUR BALANCE IS OVER");
+        System.out.println("-----------------------------------------");
+    }
+    void choi()
+    {
+        sgc ob=new sgc();
+        System.out.println("--------------------------------------------------------");
+        System.out.println("Your current balance is "+bal);
+        System.out.println("------------------------------------------------------");
+        System.out.println("");
+        System.out.println("");
+        System.out.println("Each game costs Rs.100");
+        System.out.println("1.Number guessing game");
+        System.out.println("2.Hangman");
+        System.out.println("3.Hand Cricket");
+        System.out.println("4.Stone Paper Scissors ");
+        System.out.println("5.Quiz game(this helps in increasing your balance)");
+        System.out.println("6.Exit");
+        System.out.println("Enter your choice");
+        int c=sc.nextInt();// entering choice
+        if(c==1)
+        ob.noguess();
+        else if(c==2)
+        ob.woguess();
+        else if(c==3)
+        ob.odev();
+        else if(c==4)
+        ob.sps();
+        else if(c==5)
+        ob.quiz();
+        else if(c==6)
+        {
+            System.out.print("\f");
+            System.out.println("--------------------------------------------");
+            System.out.println("                THANK YOU");
+            System.out.println("--------------------------------------------");
+        }
+        else
+        {
+            System.out.print("\f");
+            System.out.println("------------------------------------");
+            System.out.println("            eRroR");
+            System.out.println("------------------------------------");
+            ob.choi();
+        }
+    }
+    void main()
+    {
+        sgc ob=new sgc();
+        ob.design();
+        System.out.println("---------------------------------------------------------------");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println("_____________________");
+        System.out.println("                        HELLO");
+        System.out.println("            WELCOME TO SILAS GAMING CENTER ");
+        System.out.println("_____________________");
+        System.out.println("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        System.out.println("---------------------------------------------------------------");
+        System.out.println();
+        System.out.println("");
+        System.out.print("NAME    :");
+        n=sc.nextLine();
+        System.out.println("");
+        System.out.print("E-MAIL  :");
+        String e=sc.next();// email
+        int o=e.length();//length of email
+        boolean u=false;//to check validity of email
+        boolean v=false;
+        for(int k=0;k<o;k++)
+        {
+            if(e.charAt(k)=='@')
+            {
+                u=true;
+                break;
+            }
+        }
+        if(e.charAt(o-1)=='m'&&e.charAt(o-2)=='o'&&e.charAt(o-3)=='c'&&e.charAt(o-4)=='.')
+        v=true;
+        if(u==false||v==false)
+        {
+            System.out.print("\f");
+            System.out.println("--------------------------------------");
+            System.out.println("          eRroR");
+            System.out.println("--------------------------------------");
+        }
+        else
+        ob.card();
+    }
+    void card()
+    {
+        sgc ob=new sgc(); 
+        System.out.println("");
+        System.out.println("   BEFORE PLAYING YOU HAVE TO ISSUE A CARD");
+        System.out.println("");
+        System.out.println("    There are 4 packs given below. Choose one");
+        System.out.println("1. Rs.500");
+        System.out.println("2. Rs.1000 + 250 free");
+        System.out.println("3. Rs.2000 + 500 free");
+        System.out.println("4. Rs.3000 + 1000 free");
+        System.out.print("Enter your choice :");
+        int l=sc.nextInt();// entering choice
+        System.out.println("");
+        if(l==1)
+        bal=500;
+        else if(l==2)
+        bal=1250;
+        else if(l==3)
+        bal=2500;
+        else if(l==4)
+        bal=4000;
+        else
+        {
+            System.out.print("\f");
+            System.out.println("Wrong choice");
+            ob.card();
+        }
+        System.out.println("WARNING: You cannot use this card when you come next time");
+        ob.choi();
+    }
+    }
+/** variables used
+ * bal-to store balance
+ * n- to store name
+ */
+ /* Varibles in void design()
+ * a-control variable for loop
+ */
+ /*Varibles in void odev()
+ * a-number input by user to bat/bowl
+ * t-total score
+ * b-random number
+ * ct-computer total
+ * c-number bat/bowl by computer
+ * w-choice to declare innings
+ */
+/* Variables in noguess()
+ * a[]=to store 1-100
+ * f-first number
+ * l-last number
+ * m-middle number
+ * x-choice entered
+ */
+/* Variables in woguess()
+ * a[]=words
+ * e[]-explanation
+ * b[]-length
+ * p and q-random numbers
+ * x[]-converting word into array of characters
+ * y[]-array of same length as x[] with '_'
+ * g-guessing letter
+ * i-checking condition
+ * j, k & z-control varible for loop
+ */
+/* Varibles in quiz()
+ *oneq, zeroq, two q. 3q, 4q, 5q, 6q, 7q,-set of questions
+ *0a, 1a, 2a, 3a, 4a, 5a, 6a, 7a-set of option a
+ *0b, 1b, 2b, 3b, 4b, 5b, 6b, 7b,-set of option b
+ *0c, 1c, 2c, 3c, 4c, 5c, 6c, 7c-set of option c
+ *oan, 1an, 2an, 3an, 4an, 5an, 6an, 7an,-set of answer
+ *e&r-random numbers
+ *q[]=final question
+ *a[]-final a
+ *b[]-final b
+ *c[]-final c
+ *an[]-final answer
+ *s-score
+ *l-sption choosed
+ *x-loop variable
+ */
+/* Variables used in sps
+ * d&c-random num
+ * p-user score
+ * q-computer score
+ * m-String for computer
+ * n-String for user
+ */     
+/*Varibles in choi()
+ * c-choice
+ */
+/*Varibles in main()
+ * e-email
+ * o-length of email
+ * u&v-to check validity of email
+ */
+/*Variables in card()
+ * l-choice
+ */
